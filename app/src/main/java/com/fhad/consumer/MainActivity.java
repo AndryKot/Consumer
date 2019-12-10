@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         public void onReceive(Context context, Intent intent) {
             String message = intent.getStringExtra("message");
             if (message != null){
-                tvMessage.append("to produce" + message +"\n");
+                tvMessage.append("received - " + message + " - sent back - OK\n");
                 Intent sendIntent = new Intent("com.fhad.producer.action.consumer");
                 sendIntent.setPackage("com.fhad.producer");
                 sendBroadcast(sendIntent);
