@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Consumer</string>
+    <string name="in_messages">inMessage</string>
+    <string name="input"></string>
+</resources>
